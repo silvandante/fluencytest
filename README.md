@@ -2,7 +2,10 @@
 **
 
 Demonstration: https://youtu.be/q2tnKfnsy2A
+
 Tested in: Galaxy Nexus API 30, Samsung A10 and Moto G 7 Plus
+
+
 **
 APP MADE FOR ANDROID PLATFORM WITH:**
 **
