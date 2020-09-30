@@ -12,8 +12,8 @@ Network: Retrofit
 Architecture: MVVM
 **
 
-![Image 1. Architecture diagram]
-(https://github.com/silvandante/fluencytest/blob/master/readmeimage/mvvm_offiline_architecture.png?raw=true)
+[![Image 1. Offline first MVVM Architecture Diagram](https://raw.githubusercontent.com/silvandante/fluencytest/master/readmeimage/mvvm_offiline_architecture.png "Image 1. Offline first MVVM Architecture Diagram")](https://raw.githubusercontent.com/silvandante/fluencytest/master/readmeimage/mvvm_offiline_architecture.png "Image 1. Offline first MVVM Architecture Diagram")
+
 
 **
 Offline first strategy:**
@@ -46,8 +46,3 @@ Audio visualizer library: rm.com.audiowave.AudioWaveView
 
 The archives .mp3 are first downloaded to the environment DOWNLOAD folder as .mp3 files, and then played as Byte[].
 Even if the app is offline, it plays the storage audios from each card.
-
-
-
-
-
