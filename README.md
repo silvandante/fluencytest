@@ -1,6 +1,6 @@
 #Fluency Test (Offline first with Realm and audio player/visualizer for Android using Kotlin)
 
-Demonstration: https://youtu.be/q2tnKfnsy2A
+Demonstration: https://www.youtube.com/watch?v=q2tnKfnsy2A
 
 Tested in: Galaxy Nexus API 30, Samsung A10 and Moto G 7 Plus
 
