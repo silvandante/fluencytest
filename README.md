@@ -1,28 +1,24 @@
 #Fluency Test (Offline first with Realm and audio player/visualizer for Android using Kotlin)
-**
 
 Demonstration: https://youtu.be/q2tnKfnsy2A
 
 Tested in: Galaxy Nexus API 30, Samsung A10 and Moto G 7 Plus
 
 
-**
-APP MADE FOR ANDROID PLATFORM WITH:**
-**
-Language: Kotlin
+**APP MADE FOR ANDROID PLATFORM WITH:**
+
+**Language: Kotlin
 Local Database: Realm
 Network: Retrofit
-Architecture: MVVM
-**
+Architecture: MVVM**
 
 [![Image 1. Offline first MVVM Architecture Diagram](https://raw.githubusercontent.com/silvandante/fluencytest/master/readmeimage/mvvm_offiline_architecture.png "Image 1. Offline first MVVM Architecture Diagram")](https://raw.githubusercontent.com/silvandante/fluencytest/master/readmeimage/mvvm_offiline_architecture.png "Image 1. Offline first MVVM Architecture Diagram")
 
 
-**
-Offline first strategy:**
+**Offline first strategy:**
 The app asks for user login and permissions, after both authentication and permissions are given, the app checks if there is something in Realm Database, 3 possibilities where predicted:
 
-OBS: Activities are always consuming the local database.**
+**OBS: Activities are always consuming the local database.**
 
 1. There is nothing in the database and app has internet connection
 Solution: the application consumes using Retrofit the given REST API (https://dev.hackit.app/webapi), first it asks for the user's deck route, then asks for deck's cards,
@@ -42,8 +38,7 @@ with modified data consumed from REST API.
 
 (OBS: I USED TO DO THIS STRATEGY WITH ROOM, THIS WAS MY FIRST TRY WITH REALM BECAUSE THE TEST ASKED FOR IT)
 
-**
-Offline audio strategy:**
+**Offline audio strategy:**
 Audio player library:  android.media.MediaPlayer
 Audio visualizer library: rm.com.audiowave.AudioWaveView
 
