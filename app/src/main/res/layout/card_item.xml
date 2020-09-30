@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/cardBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="bottom"
+            app:cardCornerRadius="22dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="/" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="B"
+                            android:textColor="#FC2F3B" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            app:tint="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_sync_24" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fieldFrente2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Do they travel every weekend?"
+                        android:textColor="#C0C0C0"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/fieldVerso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Eles viajam todo o fim de semana?"
+                        android:textColor="#000"
+
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/audioSize2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0:30" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <rm.com.audiowave.AudioWaveView
+                                android:id="@+id/visualizer2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                app:animateExpansion="false"
+                                app:chunkHeight="24dp"
+                                app:chunkRadius="1dp"
+                                app:chunkSpacing="1dp"
+                                app:chunkWidth="3dp"
+                                app:minChunkHeight="2dp"
+                                app:touchable="true"
+                                app:waveColor="@color/gray" />
+
+                            <ImageButton
+                                android:id="@+id/playButton2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_button"
+                                android:src="@drawable/ic_play"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_easy"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/round_button_white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="FÁCIL"
+                android:textColor="#00AEE0" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_medium"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/round_button_white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="BOM"
+                android:textColor="#00AEE0" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_hard"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/round_button_white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="DIFÍCIL"
+                android:textColor="#00AEE0" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_dont_remember"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/round_button_white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="NÃO LEMBRO"
+                android:textColor="#00AEE0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFront"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="22dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/isFrontText"
+                        android:textColor="#FC2F3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/fira_sans"
+                        android:layout_height="wrap_content"
+                        android:text="/"/>
+                    <TextView
+                        android:id="@+id/isBackText"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/fira_sans"
+                        android:layout_height="wrap_content"
+                        android:text="B"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Deslize para virar" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        app:tint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_sync_24" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fieldFrente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Do they travel every weekend?"
+                    android:textColor="#FC2F3B"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/audioSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0:30" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <rm.com.audiowave.AudioWaveView
+                            android:id="@+id/visualizer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:animateExpansion="false"
+                            app:chunkWidth="3dp"
+                            app:chunkHeight="24dp"
+                            app:minChunkHeight="2dp"
+                            app:chunkSpacing="1dp"
+                            app:waveColor="@color/gray"
+                            app:chunkRadius="1dp"
+                            app:touchable="true"
+                            android:layout_weight="0.9"
+                            />
+
+
+                        <ImageButton
+                            android:id="@+id/playButton"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@color/gray"
+                            android:background="@drawable/round_button"
+                            android:src="@drawable/ic_play"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
